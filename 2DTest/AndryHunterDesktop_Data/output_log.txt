@@ -1,27 +1,25 @@
-Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
     Vendor:   Intel
-    VRAM:     128 MB
+    VRAM:     2041 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.056 seconds
+Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.142 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+XInput1_3.dll not found.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\CristianCamilo\Documents\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\System.dll (this message is harmless)
 chanse scene
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -34,11 +32,11 @@ Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.026234 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.221503 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 204.
-Total: 0.267666 ms (FindLiveObjects: 0.074306 ms CreateObjectMapping: 0.012726 ms MarkObjects: 0.174065 ms  DeleteObjects: 0.004926 ms)
+Total: 0.307088 ms (FindLiveObjects: 0.020527 ms CreateObjectMapping: 0.014779 ms MarkObjects: 0.264802 ms  DeleteObjects: 0.005747 ms)
 
 Player connected 1
  
@@ -47,4 +45,13 @@ Player connected 1
 RPC SendInfoToClient
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Player disconnected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Connection lost to NAT facilitator, reconnecting.
+
+ 
+(Filename:  Line: 734)
 
