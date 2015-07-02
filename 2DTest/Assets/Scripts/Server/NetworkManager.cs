@@ -15,7 +15,8 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	void Update(){
-		
+	
+		string x = "";
 	}
 	
 	/*private void Awake(){
