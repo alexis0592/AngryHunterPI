@@ -6,20 +6,20 @@ Direct3D:
     Vendor:   Intel
     VRAM:     2041 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.142 seconds
+Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.103 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\AndryHunterDesktop_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\System.dll (this message is harmless)
 chanse scene
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -32,11 +32,47 @@ Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.221503 ms
+SpawnPlayer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 204.
-Total: 0.307088 ms (FindLiveObjects: 0.020527 ms CreateObjectMapping: 0.014779 ms MarkObjects: 0.264802 ms  DeleteObjects: 0.005747 ms)
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Network:INTERNAL_CALL_Instantiate (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&,int)
+  at UnityEngine.Network.Instantiate (UnityEngine.Object prefab, Vector3 position, Quaternion rotation, Int32 group) [0x00000] in <filename unknown>:0 
+  at NetworkManager.SpawnPlayer () [0x00000] in <filename unknown>:0 
+  at NetworkManager.OnServerInitialized () [0x00000] in <filename unknown>:0 
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:StartServer()
+NetworkManager:changeScene(String)
+UnityEngine.Events.InvokableCall`1:Invoke(Object[])
+UnityEngine.Events.CachedInvokableCall`1:Invoke(Object[])
+UnityEngine.Events.InvokableCallList:Invoke(Object[])
+UnityEngine.Events.UnityEventBase:Invoke(Object[])
+UnityEngine.Events.UnityEvent:Invoke()
+UnityEngine.UI.Button:Press()
+UnityEngine.UI.Button:OnPointerClick(PointerEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+ 
+(Filename:  Line: -1)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.877876 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 207.
+Total: 4.779165 ms (FindLiveObjects: 0.014779 ms CreateObjectMapping: 0.009442 ms MarkObjects: 4.747963 ms  DeleteObjects: 0.006568 ms)
+
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+RPC SendInfoToClient
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Player connected 1
  
@@ -50,8 +86,7 @@ Player disconnected 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Connection lost to NAT facilitator, reconnecting.
-
+Player disconnected 1
  
-(Filename:  Line: 734)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 

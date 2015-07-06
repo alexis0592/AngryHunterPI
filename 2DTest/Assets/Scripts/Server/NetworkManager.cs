@@ -8,10 +8,12 @@ public class NetworkManager : MonoBehaviour {
 	private const int numMaxGamers = 10;
 	private const int numPort = 25000;
 	private bool serverStarted = false;
-	public Transform gobjMira;
+	public GameObject gobjMira;
+	string message;
 	
 	void Start(){
 		typeName = "abcd1234";
+		message = "";
 	}
 
 	void Update(){
@@ -31,6 +33,7 @@ public class NetworkManager : MonoBehaviour {
 			style.normal.textColor = Color.black;
 			GUI.Label(new Rect(50,50,100,25), "Numero Sesion: " + typeName, style);
 			GUI.Label(new Rect(100,100,100,25), "Conexiones: " + Network.connections.Length, style);
+			GUI.Label (new Rect (80, 80, 200, 205), "Numero Sesion: " + message);
 		}
 	}
 	
@@ -63,6 +66,7 @@ public class NetworkManager : MonoBehaviour {
 	{
 		Debug.Log("Server Initializied");
 		serverStarted = true;
+		SpawnPlayer ();
 	}
 	
 	void OnPlayerConnected(NetworkPlayer player) 
@@ -97,6 +101,7 @@ public class NetworkManager : MonoBehaviour {
 	
 	[RPC]
 	void ReceiveInfoFromClient(string info){
+		message = info;
 		Debug.Log ("RPC ReceiveInfoFromClient: " + info);
 	}
 	

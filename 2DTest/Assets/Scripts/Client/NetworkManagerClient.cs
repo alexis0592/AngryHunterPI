@@ -56,25 +56,23 @@ public class NetworkManagerClient : MonoBehaviour {
 	private void JoinServer(HostData hostData){
 		Debug.Log("Entr a change JoinServer");
 		Network.Connect(hostData);
+
 	}
 	
 	void OnConnectedToServer(){
-		//SpawnPlayer ();
+		SpawnPlayer ();
 		//Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
+		SendInfoToServer();
 		Debug.Log("Entr a change OnConnectedToServer");
 		Debug.Log("Server Joined");
 	}
-	
-	private void SpawnPlayer(){
-		
-		Network.Instantiate (gobjMira, new Vector3 (0f, 5f, 0f), Quaternion.identity, 0);
-	}
+
 	
 	[RPC] 
 	void SendInfoToServer(){
 		Debug.Log("Info sent to server");
 		string info = "Hola servidor";
-		GetComponent<NetworkView>().RPC("ReceiveInfoFromClient", RPCMode.All, info);
+		GetComponent<NetworkView>().RPC("ReceiveInfoFromClient", RPCMode.Server, info);
 	}
 	
 	[RPC]
@@ -90,5 +88,10 @@ public class NetworkManagerClient : MonoBehaviour {
 	
 	[RPC]
 	void SendInfoToClient(){}
-	
+
+	private void SpawnPlayer()
+	{
+		Debug.Log("SpawnPlayer");
+		Network.Instantiate(gobjMira, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+	}
 }
