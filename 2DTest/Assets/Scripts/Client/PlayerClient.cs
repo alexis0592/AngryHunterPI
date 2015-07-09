@@ -6,8 +6,9 @@ public class PlayerClient : MonoBehaviour {
 	float Gx = 0f;
 	float Gy = 0f;
 	float Gz = 0f;
-	static float alpha = 0.8f;
+	static float alpha = 0.5f;
 	Vector3 vector;
+	private bool clicked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,8 +21,14 @@ public class PlayerClient : MonoBehaviour {
 		if (Network.peerType == NetworkPeerType.Client) {
 			moveMira ();
 		}
-	}
 
+		/*if(!clicked){
+			sendShootToServer(0);
+		}else{
+			sendShootToServer(1);
+		}*/
+	}
+	
 	private float pitch(){
 		return Mathf.Atan(Gy/(Mathf.Sqrt(Mathf.Pow(Gx,2) + Mathf.Pow(Gz,2))));
 	}
@@ -34,6 +41,17 @@ public class PlayerClient : MonoBehaviour {
 		Update ();
 	}
 
+	public void OnMouseDown(){
+		sendShootToServer (1);
+	}
+
+	public void OnMouseUp(){
+		sendShootToServer (0);
+	}
+
+	/// <summary>
+	/// Llamada RPC que envia los datos del acelerometro al servidor, para mover la mira
+	/// </summary>
 	[RPC]
 	void moveMira(){
 		Gx = Input.acceleration.x * alpha + (Gx * (1.0f - alpha));
@@ -42,9 +60,25 @@ public class PlayerClient : MonoBehaviour {
 
 		vector = new Vector3 (roll(), - pitch (), 0);
 
-		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.All, vector);
+		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.Server, vector);
 	}
 
+	/// <summary>
+	/// Llamada RPC que envia el disparo del jugador al servidor.
+	/// </summary>
+	[RPC]
+	public void sendShootToServer(int shootToServer){
+
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, shootToServer);
+	}
+
+	/// <summary>
+	/// LLamada RPC del Script PlayerServer, que recibe los datos adquiridos por el acelerometro
+	/// </summary>
+	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
 	void ReceivePlayerPosition(Vector3 vectorReceived){}
+
+	[RPC]
+	void ReceivePlayerShoot(int shoot){}
 }
