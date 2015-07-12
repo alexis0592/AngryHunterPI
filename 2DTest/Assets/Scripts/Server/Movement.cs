@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour {
 	//public float angle;
 	Vector3 initPos;
 	 
+	private Ray pulsacion;
+	private RaycastHit colision;
 	
 	void Start (){
 		
@@ -24,14 +26,21 @@ public class Movement : MonoBehaviour {
 		Vector3 v= ResetTarget (initPos);
 		initPos = v;
 		transform.position = Vector3.MoveTowards (transform.position, v, step);
-		
 
+		if (Input.GetMouseButton (0)) {
+			Vector3 mousePosition = Input.mousePosition;
+			pulsacion=Camera.main.ScreenPointToRay(mousePosition);
+			if(Physics.Raycast(pulsacion,out colision))
+			{
+				Debug.Log(colision.collider.name); 
+			}
+		}
 	}
 
 	/*
 	 * Metodo para resetear el vector posicion bajo el movimiento descrito por un tiro parabolico
 	 */
-	private Vector3 ResetTarget (Vector3 vec){
+	public Vector3 ResetTarget (Vector3 vec){
 
 		float x = (53.5f*Mathf.Cos(45) * timer) + vec.x;
 		float y = (-0.5f *9.8f *Mathf.Pow(timer, 2)) + (12.5f * Mathf.Sin(45) * timer) + vec.y;
@@ -53,5 +62,14 @@ public class Movement : MonoBehaviour {
 			transform.position = initPos;
 
 		}
+	}
+
+	public void validateShoot(Vector3 shootPosition){
+
+		pulsacion=Camera.main.ScreenPointToRay(shootPosition);
+		if(Physics.Raycast(pulsacion,out colision)){
+			Debug.Log(colision.collider.name); 
+		}
+
 	}
 }

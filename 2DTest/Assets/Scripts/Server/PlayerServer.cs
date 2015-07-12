@@ -3,12 +3,16 @@ using System.Collections;
 
 
 public class PlayerServer : MonoBehaviour {
-
+	Movement movement;
 	Vector3 vector;
 	public int shoot = 0;
+	private Ray pulsation;
+	private RaycastHit collition;
+	public GameObject g;
 
 	void Start () {
 		vector = new Vector3 (11.0f, 0.0f, 0.0f);
+		movement = 	g.GetComponent<Movement>();
 	}
 
 	void Update () {
@@ -19,6 +23,7 @@ public class PlayerServer : MonoBehaviour {
 
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
+
 			//shoot = 0;
 			//transform.position = vector *Time.deltaTime *5;
 		}
@@ -59,6 +64,13 @@ public class PlayerServer : MonoBehaviour {
 
 	[RPC]
 	void ReceivePlayerShoot(int shoot){
+		Vector3 vecAux = transform.position;
+		//movement = 	gameObject.GetComponent<Movement>();
+		movement.validateShoot (vecAux);
+		this.pulsation = Camera.main.ScreenPointToRay (vecAux);
+		if (Physics.Raycast (pulsation, out collition)) {
+			Debug.Log(collition.collider.name);
+		}
 		this.shoot = shoot;
 	}
 	

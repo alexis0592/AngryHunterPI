@@ -45,9 +45,9 @@ public class PlayerClient : MonoBehaviour {
 		sendShootToServer (1);
 	}
 
-	public void OnMouseUp(){
+	/*public void OnMouseUp(){
 		sendShootToServer (0);
-	}
+	}*/
 
 	/// <summary>
 	/// Llamada RPC que envia los datos del acelerometro al servidor, para mover la mira
