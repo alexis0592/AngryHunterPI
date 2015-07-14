@@ -1,18 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 public class PlayerServer : MonoBehaviour {
-	Movement movement;
+	Movement movementGreen;
+	Movement movementRed;
+	Movement movementYellow;
+	Movement movementBlack;
+	public GameObject green;
+	public GameObject red;
+	public GameObject yellow;
+	public GameObject black;
+	
 	Vector3 vector;
 	public int shoot = 0;
-	private Ray pulsation;
-	private RaycastHit collition;
-	public GameObject g;
+	List<Movement> movements;
+
+	private Ray pulsacion;
+	private RaycastHit colision;
 
 	void Start () {
-		vector = new Vector3 (11.0f, 0.0f, 0.0f);
-		movement = 	g.GetComponent<Movement>();
+		vector = new Vector3 (0.0f, 0.0f, 0.0f);
+		movements = new List<Movement> ();
+
+		movementGreen = green.GetComponent<Movement> ();
+		movementRed = red.GetComponent<Movement> ();
+		movementYellow = yellow.GetComponent<Movement> ();
+		movementBlack = black.GetComponent<Movement> ();
 	}
 
 	void Update () {
@@ -24,10 +39,9 @@ public class PlayerServer : MonoBehaviour {
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
 
-			//shoot = 0;
-			//transform.position = vector *Time.deltaTime *5;
 		}
 	}
+
 	/// <summary>
 	/// Resetea la posicion de la mira cuando esta se sale de pantalla.
 	/// </summary>
@@ -35,20 +49,20 @@ public class PlayerServer : MonoBehaviour {
 	/// <param name="yPos">Posicion Y de la mira</param>
 	private void resetTargetPosition(float xPos, float yPos){
 		Vector3 targetPos;
-		if (xPos < -2.3f ) {
-			targetPos = new Vector3(-2.2f, yPos, 0);
+		if (xPos < 2.8f ) {
+			targetPos = new Vector3(2.7f, yPos, 0);
 			transform.position = targetPos;
 		}
-		if (xPos > 23.4f) {
-			targetPos = new Vector3(23.3f, yPos, 0);
+		if (xPos > 32.4f) {
+			targetPos = new Vector3(32.3f, yPos, 0);
 			transform.position = targetPos;
 		}
-		if (yPos < -3.1f) {
-			targetPos = new Vector3(xPos, -3.0f, 0);
+		if (yPos < -10.6f) {
+			targetPos = new Vector3(xPos, -10.5f, 0);
 			transform.position = targetPos;
 		}
-		if (yPos > 4.4f) {
-			targetPos = new Vector3(xPos, 4.3f, 0);
+		if (yPos > -3.6f) {
+			targetPos = new Vector3(xPos, -3.5f, 0);
 			transform.position = targetPos;
 		}
 	}
@@ -64,12 +78,29 @@ public class PlayerServer : MonoBehaviour {
 
 	[RPC]
 	void ReceivePlayerShoot(int shoot){
-		Vector3 vecAux = transform.position;
-		//movement = 	gameObject.GetComponent<Movement>();
-		movement.validateShoot (vecAux);
-		this.pulsation = Camera.main.ScreenPointToRay (vecAux);
-		if (Physics.Raycast (pulsation, out collition)) {
-			Debug.Log(collition.collider.name);
+		Vector3 vecAux = Camera.main.WorldToScreenPoint(transform.position);
+
+		pulsacion=Camera.main.ScreenPointToRay(vecAux);	
+		if(Physics.Raycast(pulsacion,out colision)){
+			if(colision.collider.tag == "Bird"){
+				string colisionName = colision.collider.name;
+				switch (colisionName){
+				case "angry-bird-red":
+					movementRed.validateShoot();
+					break;
+				case "angry-bird-black":
+					movementBlack.validateShoot();
+					break;
+				case "angry-bird-yellow":
+					movementYellow.validateShoot();
+					break;
+				case "angry-bird-green":
+					movementGreen.validateShoot();;
+					break;
+				default:
+					break;
+				}
+			}
 		}
 		this.shoot = shoot;
 	}

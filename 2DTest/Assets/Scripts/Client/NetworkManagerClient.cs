@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NetworkManagerClient : MonoBehaviour {
 	
@@ -14,8 +15,15 @@ public class NetworkManagerClient : MonoBehaviour {
 	public GameObject gobjMira;
 
 	public string message;
+	public InputField inputFieldSessionGame;
+
+	void Awake(){
+
+	}
+
 	void Start(){
 		message = "";
+		inputFieldSessionGame = GetComponent<InputField> ();
 	}
 
 	void OnGUI(){
@@ -23,13 +31,15 @@ public class NetworkManagerClient : MonoBehaviour {
 			GUIStyle style = new GUIStyle ();
 			style.normal.textColor = Color.black;
 			GUI.Label (new Rect (50, 50, 200, 205), "Numero Sesion: " + message);
+
 		}
 	}
-
 	
 	public void changeScene(string scene){
 		//JoinServer (hostList[0]);
 		Debug.Log("Entr a change scene");
+		//message = inputFieldSessionGame.text;
+		//Debug.Log(message);
 		RefreshHostList ();
 		if (hostList != null) {
 			JoinServer(hostList[0]);
