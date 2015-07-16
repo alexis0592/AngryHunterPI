@@ -8,10 +8,16 @@ public class PlayerServer : MonoBehaviour {
 	Movement movementRed;
 	Movement movementYellow;
 	Movement movementBlack;
+	Movement movementBlue;
+	Movement movementWhite;
+	Movement movementBigRed;
 	public GameObject green;
 	public GameObject red;
 	public GameObject yellow;
 	public GameObject black;
+	public GameObject blue;
+	public GameObject white;
+	public GameObject bigRed;
 	
 	Vector3 vector;
 	public int shoot = 0;
@@ -28,6 +34,9 @@ public class PlayerServer : MonoBehaviour {
 		movementRed = red.GetComponent<Movement> ();
 		movementYellow = yellow.GetComponent<Movement> ();
 		movementBlack = black.GetComponent<Movement> ();
+		movementBlue = blue.GetComponent<Movement> ();
+		movementWhite = white.GetComponent<Movement> ();
+		movementBigRed = bigRed.GetComponent<Movement> ();
 	}
 
 	void Update () {
@@ -76,6 +85,10 @@ public class PlayerServer : MonoBehaviour {
 		vector = vectorReceived;
 	}
 
+	/// <summary>
+	/// Llamada RPC que recibe el disparo del jugador
+	/// </summary>
+	/// <param name="shoot">Shoot.</param>
 	[RPC]
 	void ReceivePlayerShoot(int shoot){
 		Vector3 vecAux = Camera.main.WorldToScreenPoint(transform.position);
@@ -96,6 +109,16 @@ public class PlayerServer : MonoBehaviour {
 					break;
 				case "angry-bird-green":
 					movementGreen.validateShoot();;
+					break;
+				case "angry-bird-blue":
+					movementBlue.validateShoot();
+					Debug.Log(colisionName);
+					break;
+				case "angry-bird-white":
+					movementWhite.validateShoot();
+					break;
+				case "angry-bird-bigRed":
+					movementBigRed.validateShoot();
 					break;
 				default:
 					break;

@@ -128,7 +128,7 @@ public class NetworkManager : MonoBehaviour {
 	[RPC]
 	void SendInfoToClient(){
 		Debug.Log ("RPC SendInfoToClient");
-		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, "HOLA MUNDO!!!");
+		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, "CONECTADO!!!");
 	}
 	
 	public void getPosition(Vector3 getPosition){

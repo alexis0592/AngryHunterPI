@@ -30,13 +30,16 @@ public class NetworkManagerClient : MonoBehaviour {
 		if (Network.peerType == NetworkPeerType.Client) {
 			GUIStyle style = new GUIStyle ();
 			style.normal.textColor = Color.black;
-			GUI.Label (new Rect (50, 50, 200, 205), "Numero Sesion: " + message);
+			GUI.Label (new Rect (50, 50, 400, 405), "Estado del Juego: " + message);
 
 		}
 	}
-	
+
+	/// <summary>
+	/// Metodo para cambiar la escena de Juego.
+	/// </summary>
+	/// <param name="scene">Scene a la cual se quiere cambiar</param>
 	public void changeScene(string scene){
-		//JoinServer (hostList[0]);
 		Debug.Log("Entr a change scene");
 		//message = inputFieldSessionGame.text;
 		//Debug.Log(message);
@@ -62,13 +65,20 @@ public class NetworkManagerClient : MonoBehaviour {
 			hostList = MasterServer.PollHostList ();
 		}
 	}
-	
+
+	/// <summary>
+	/// Metodo por medio del cual se conectan los clientes al servidor
+	/// </summary>
+	/// <param name="hostData">Datos del host a conectar</param>
 	private void JoinServer(HostData hostData){
 		Debug.Log("Entr a change JoinServer");
 		Network.Connect(hostData);
 
 	}
-	
+
+	/// <summary>
+	/// Metodo que se ejecuta cuando un cliente se conecta al servidor Maestro
+	/// </summary>
 	void OnConnectedToServer(){
 		SpawnPlayer ();
 		//Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
@@ -77,6 +87,14 @@ public class NetworkManagerClient : MonoBehaviour {
 		Debug.Log("Server Joined");
 	}
 
+	/// <summary>
+	/// Raises the disconnected from server event.
+	/// </summary>
+	/// <param name="info">Info.</param>
+	void OnDisconnectedFromServer(NetworkDisconnection info){
+		Application.LoadLevel ("initScene");
+		Debug.Log ("Disconnected from SERVER");
+	}
 	
 	[RPC] 
 	void SendInfoToServer(){
@@ -89,7 +107,6 @@ public class NetworkManagerClient : MonoBehaviour {
 	void ReceiveInfoFromServer(string info){
 		message = info;
 		Debug.Log ("Informacion del servidor: " + info);
-		//OnGUI ();
 		//Network.isMessageQueueRunning = false;
 	}
 	
