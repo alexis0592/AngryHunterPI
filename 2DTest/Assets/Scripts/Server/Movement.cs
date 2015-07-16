@@ -57,17 +57,20 @@ public class Movement : MonoBehaviour {
 	private void resetPosition(float xPosition, float yPosition){
 		if(xPosition >= 35.5f || yPosition <= -12.5f || yPosition >= -1.0f){
 
+
 			timer = 0;
-			initPos= new Vector3(-1.1f, Random.Range(-5.0f, -9.0f), 0.0f);
+			initPos= new Vector3(-4.0f, -1.0f, 0.0f);
 			transform.position = initPos;
 
 		}
 	}
 
-	public void validateShoot(){
+	public void validateShoot(Vector3 shootPosition){
 
-		initPos= new Vector3(-1.1f, Random.Range(-5.0f, -9.0f), 0.0f);
-		Vector3 v= ResetTarget (initPos);
-		transform.position = initPos;
+		pulsacion=Camera.main.ScreenPointToRay(shootPosition);
+		if(Physics.Raycast(pulsacion,out colision)){
+			Debug.Log(colision.collider.name); 
+		}
+
 	}
 }

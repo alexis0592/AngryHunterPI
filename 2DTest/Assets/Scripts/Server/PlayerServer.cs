@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 
 public class PlayerServer : MonoBehaviour {
@@ -18,17 +17,16 @@ public class PlayerServer : MonoBehaviour {
 	public GameObject blue;
 	public GameObject white;
 	public GameObject bigRed;
-	
+
 	Vector3 vector;
 	public int shoot = 0;
-	List<Movement> movements;
-
 	private Ray pulsacion;
 	private RaycastHit colision;
+	public GameObject g;
 
 	void Start () {
+
 		vector = new Vector3 (0.0f, 0.0f, 0.0f);
-		movements = new List<Movement> ();
 
 		movementGreen = green.GetComponent<Movement> ();
 		movementRed = red.GetComponent<Movement> ();
@@ -37,6 +35,7 @@ public class PlayerServer : MonoBehaviour {
 		movementBlue = blue.GetComponent<Movement> ();
 		movementWhite = white.GetComponent<Movement> ();
 		movementBigRed = bigRed.GetComponent<Movement> ();
+
 	}
 
 	void Update () {
@@ -48,9 +47,10 @@ public class PlayerServer : MonoBehaviour {
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
 
+			//shoot = 0;
+			//transform.position = vector *Time.deltaTime *5;
 		}
 	}
-
 	/// <summary>
 	/// Resetea la posicion de la mira cuando esta se sale de pantalla.
 	/// </summary>
@@ -58,20 +58,20 @@ public class PlayerServer : MonoBehaviour {
 	/// <param name="yPos">Posicion Y de la mira</param>
 	private void resetTargetPosition(float xPos, float yPos){
 		Vector3 targetPos;
-		if (xPos < 2.8f ) {
-			targetPos = new Vector3(2.7f, yPos, 0);
+		if (xPos < -2.3f ) {
+			targetPos = new Vector3(-2.2f, yPos, 0);
 			transform.position = targetPos;
 		}
-		if (xPos > 32.4f) {
-			targetPos = new Vector3(32.3f, yPos, 0);
+		if (xPos > 23.4f) {
+			targetPos = new Vector3(23.3f, yPos, 0);
 			transform.position = targetPos;
 		}
-		if (yPos < -10.6f) {
-			targetPos = new Vector3(xPos, -10.5f, 0);
+		if (yPos < -3.1f) {
+			targetPos = new Vector3(xPos, -3.0f, 0);
 			transform.position = targetPos;
 		}
-		if (yPos > -3.6f) {
-			targetPos = new Vector3(xPos, -3.5f, 0);
+		if (yPos > 4.4f) {
+			targetPos = new Vector3(xPos, 4.3f, 0);
 			transform.position = targetPos;
 		}
 	}
@@ -91,6 +91,7 @@ public class PlayerServer : MonoBehaviour {
 	/// <param name="shoot">Shoot.</param>
 	[RPC]
 	void ReceivePlayerShoot(int shoot){
+
 		Vector3 vecAux = Camera.main.WorldToScreenPoint(transform.position);
 
 		pulsacion=Camera.main.ScreenPointToRay(vecAux);	

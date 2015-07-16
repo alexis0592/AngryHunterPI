@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
 public class NetworkManagerClient : MonoBehaviour {
 	
@@ -15,21 +14,15 @@ public class NetworkManagerClient : MonoBehaviour {
 	public GameObject gobjMira;
 
 	public string message;
-	public InputField inputFieldSessionGame;
-
-	void Awake(){
-
-	}
-
 	void Start(){
 		message = "";
-		inputFieldSessionGame = GetComponent<InputField> ();
 	}
 
 	void OnGUI(){
 		if (Network.peerType == NetworkPeerType.Client) {
 			GUIStyle style = new GUIStyle ();
 			style.normal.textColor = Color.black;
+
 			GUI.Label (new Rect (50, 50, 400, 405), "Estado del Juego: " + message);
 
 		}
@@ -39,10 +32,9 @@ public class NetworkManagerClient : MonoBehaviour {
 	/// Metodo para cambiar la escena de Juego.
 	/// </summary>
 	/// <param name="scene">Scene a la cual se quiere cambiar</param>
+
 	public void changeScene(string scene){
 		Debug.Log("Entr a change scene");
-		//message = inputFieldSessionGame.text;
-		//Debug.Log(message);
 		RefreshHostList ();
 		if (hostList != null) {
 			JoinServer(hostList[0]);

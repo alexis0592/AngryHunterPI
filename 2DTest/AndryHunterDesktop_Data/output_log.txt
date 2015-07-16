@@ -12,7 +12,11 @@ Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\Andr
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+<<<<<<< HEAD
 - Completed reload, in  0.055 seconds
+=======
+- Completed reload, in  0.079 seconds
+>>>>>>> parent of f3cd22f... fix bird shoot
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
@@ -60,6 +64,7 @@ UnityEngine.EventSystems.EventSystem:Update()
  
 (Filename:  Line: -1)
 
+<<<<<<< HEAD
 Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -97,4 +102,27 @@ UnloadTime: 7.117230 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 236.
 Total: 0.318173 ms (FindLiveObjects: 0.024632 ms CreateObjectMapping: 0.014779 ms MarkObjects: 0.265623 ms  DeleteObjects: 0.012726 ms)
+=======
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 27.134623 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.291077 ms (FindLiveObjects: 0.021348 ms CreateObjectMapping: 0.013958 ms MarkObjects: 0.249201 ms  DeleteObjects: 0.005337 ms)
+
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+RPC SendInfoToClient
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+RPC SendInfoToClient
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+>>>>>>> parent of f3cd22f... fix bird shoot
 
