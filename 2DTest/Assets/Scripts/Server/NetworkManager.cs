@@ -11,6 +11,7 @@ public class NetworkManager : MonoBehaviour {
 	private bool serverStarted = false;
 	public GameObject gobjMira;
 	string message;
+	int puntuation;
 
 	public Text text;
 
@@ -26,6 +27,7 @@ public class NetworkManager : MonoBehaviour {
 		//text = transform.GetComponent<Text> ();
 		typeName = "abcd1234";
 		message = "";
+		puntuation = 0;
 	}
 
 	void Update(){
@@ -42,10 +44,10 @@ public class NetworkManager : MonoBehaviour {
 	void OnGUI(){
 		if (Network.peerType == NetworkPeerType.Server) {
 			GUIStyle style = new GUIStyle();
-			style.normal.textColor = Color.black;			
-			GUI.Label(new Rect(50,50,100,25), "Numero Sesion: " + typeName, style);
-			GUI.Label(new Rect(100,100,100,25), "Conexiones: " + Network.connections.Length, style);
-			GUI.Label (new Rect (80, 80, 200, 205), "Numero Sesion: " + message);
+			style.normal.textColor = Color.black;		
+			style.fontSize = 15;
+			GUI.Label(new Rect(20,20,100,25), "Numero Sesion: " + typeName, style);
+			GUI.Label(new Rect(20,40,100,25), "Jugadores: " + Network.connections.Length, style);
 		}
 	}
 	

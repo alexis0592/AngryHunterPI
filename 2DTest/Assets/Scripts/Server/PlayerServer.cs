@@ -16,9 +16,11 @@ public class PlayerServer : MonoBehaviour {
 	public GameObject yellow;
 	public GameObject black;
 	public GameObject blue;
-	public GameObject white;
+	public GameObject white; 
 	public GameObject bigRed;
-	
+
+	static int points = 0;
+
 	Vector3 vector;
 	public int shoot = 0;
 	List<Movement> movements;
@@ -48,6 +50,15 @@ public class PlayerServer : MonoBehaviour {
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
 
+		}
+	}
+
+	void OnGUI(){
+		if (Network.peerType == NetworkPeerType.Server) {
+			GUIStyle style = new GUIStyle();
+			style.normal.textColor = Color.black;		
+			style.fontSize = 12;
+			GUI.Label (new Rect (370, 20, 100, 25), "Puntaje: " + points, style);
 		}
 	}
 
@@ -97,28 +108,29 @@ public class PlayerServer : MonoBehaviour {
 		if(Physics.Raycast(pulsacion,out colision)){
 			if(colision.collider.tag == "Bird"){
 				string colisionName = colision.collider.name;
+				points++;
 				switch (colisionName){
 				case "angry-bird-red":
-					movementRed.validateShoot();
+					movementRed.validateShoot(points);
 					break;
 				case "angry-bird-black":
-					movementBlack.validateShoot();
+					movementBlack.validateShoot(points);
 					break;
 				case "angry-bird-yellow":
-					movementYellow.validateShoot();
+					movementYellow.validateShoot(points);
 					break;
 				case "angry-bird-green":
-					movementGreen.validateShoot();;
+					movementGreen.validateShoot(points);;
 					break;
 				case "angry-bird-blue":
-					movementBlue.validateShoot();
+					movementBlue.validateShoot(points);
 					Debug.Log(colisionName);
 					break;
 				case "angry-bird-white":
-					movementWhite.validateShoot();
+					movementWhite.validateShoot(points);
 					break;
 				case "angry-bird-bigRed":
-					movementBigRed.validateShoot();
+					movementBigRed.validateShoot(points);
 					break;
 				default:
 					break;

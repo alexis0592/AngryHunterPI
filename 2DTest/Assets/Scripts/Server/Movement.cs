@@ -8,12 +8,12 @@ public class Movement : MonoBehaviour {
 	public float speed;
 	//public float angle;
 	Vector3 initPos;
+	private int puntuation;
 	 
 	private Ray pulsacion;
 	private RaycastHit colision;
 	
 	void Start (){
-		
 		initPos = new Vector3 (3.5f, 2.5f, 0);
 	}
 	
@@ -36,6 +36,7 @@ public class Movement : MonoBehaviour {
 			}
 		}
 	}
+	
 
 	/*
 	 * Metodo para resetear el vector posicion bajo el movimiento descrito por un tiro parabolico
@@ -64,10 +65,11 @@ public class Movement : MonoBehaviour {
 		}
 	}
 
-	public void validateShoot(){
+	public void validateShoot(int point){
 
 		initPos= new Vector3(-10.5f, Random.Range(-3.4f, 1.2f), 0.0f);
 		Vector3 v= ResetTarget (initPos);
 		transform.position = initPos;
+		puntuation = point;
 	}
 }
