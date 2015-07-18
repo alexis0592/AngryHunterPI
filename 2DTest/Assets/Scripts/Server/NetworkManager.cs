@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NetworkManager : MonoBehaviour {
 	
@@ -10,8 +11,19 @@ public class NetworkManager : MonoBehaviour {
 	private bool serverStarted = false;
 	public GameObject gobjMira;
 	string message;
-	
+
+	public Text text;
+
+	/*void Awake(){
+		Debug.Log ("En el AWAKE");
+		int randomNumber = (int)Random.Range (1000.0F, 9999.0F);
+		//text.text = "Codigo Sala: " + (int)randomNumber;
+		typeName = randomNumber.ToString();
+		//typeName = randomNumber.ToString();
+	}*/
+
 	void Start(){
+		//text = transform.GetComponent<Text> ();
 		typeName = "abcd1234";
 		message = "";
 	}
@@ -30,7 +42,7 @@ public class NetworkManager : MonoBehaviour {
 	void OnGUI(){
 		if (Network.peerType == NetworkPeerType.Server) {
 			GUIStyle style = new GUIStyle();
-			style.normal.textColor = Color.black;
+			style.normal.textColor = Color.black;			
 			GUI.Label(new Rect(50,50,100,25), "Numero Sesion: " + typeName, style);
 			GUI.Label(new Rect(100,100,100,25), "Conexiones: " + Network.connections.Length, style);
 			GUI.Label (new Rect (80, 80, 200, 205), "Numero Sesion: " + message);
