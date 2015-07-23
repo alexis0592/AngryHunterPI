@@ -7,26 +7,21 @@ public class PlayerClient : MonoBehaviour {
 	float Gy = 0f;
 	float Gz = 0f;
 	static float alpha = 0.5f;
-	Vector3 vector;
+	Vector3 vectorPlayer;
 	private bool clicked = false;
+	NetworkManagerClient networkManagerClient;
+
 
 	// Use this for initialization
 	void Start () {
-	
+		networkManagerClient = GetComponent<NetworkManagerClient> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		if (Network.peerType == NetworkPeerType.Client) {
 			moveMira ();
 		}
-
-		/*if(!clicked){
-			sendShootToServer(0);
-		}else{
-			sendShootToServer(1);
-		}*/
 	}
 	
 	private float pitch(){
@@ -45,10 +40,6 @@ public class PlayerClient : MonoBehaviour {
 		sendShootToServer (1);
 	}
 
-	/*public void OnMouseUp(){
-		sendShootToServer (0);
-	}*/
-
 	/// <summary>
 	/// Llamada RPC que envia los datos del acelerometro al servidor, para mover la mira
 	/// </summary>
@@ -58,18 +49,16 @@ public class PlayerClient : MonoBehaviour {
 		Gy = Input.acceleration.y * alpha + (Gy * (1.0f - alpha));
 		Gz = Input.acceleration.z * alpha + (Gz * (1.0f - alpha));
 
-		vector = new Vector3 (roll(), - pitch (), 0);
-
-		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.Server, vector);
+		vectorPlayer = new Vector3 (roll(), - pitch (), 0);
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerPosition", RPCMode.Server, vectorPlayer, 2);//networkManagerClient.player.Id);
 	}
 
 	/// <summary>
 	/// Llamada RPC que envia el disparo del jugador al servidor.
 	/// </summary>
 	[RPC]
-	public void sendShootToServer(int shootToServer){
-
-		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, shootToServer);
+	public void sendShootToServer(int idPlayer){
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, 2);//networkManagerClient.player.Id);
 	}
 
 	/// <summary>
@@ -77,8 +66,8 @@ public class PlayerClient : MonoBehaviour {
 	/// </summary>
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
-	void ReceivePlayerPosition(Vector3 vectorReceived){}
+	void ReceivePlayerPosition(Vector3 vectorReceived, int idPlayer){}
 
 	[RPC]
-	void ReceivePlayerShoot(int shoot){}
+	void ReceivePlayerShoot(int idPlayer){}
 }

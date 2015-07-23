@@ -12,7 +12,10 @@ public class NetworkManagerClient : MonoBehaviour {
 	private HostData[] hostList;
 	
 	private NetworkView nView;
-	public GameObject gobjMira;
+	public GameObject gobjMiraPlayer1;
+	public GameObject gobjMiraPlayer2;
+	public GameObject gobjMiraPlayer3;
+	public Player player;
 
 	public string message;
 	public InputField inputFieldSessionGame;
@@ -31,8 +34,11 @@ public class NetworkManagerClient : MonoBehaviour {
 			GUIStyle style = new GUIStyle ();
 			style.normal.textColor = Color.black;
 			GUI.Label (new Rect (50, 50, 400, 405), "Estado del Juego: " + message);
-
 		}
+	}
+
+	public void joinToGame(){
+		RefreshHostList ();
 	}
 
 	/// <summary>
@@ -40,13 +46,14 @@ public class NetworkManagerClient : MonoBehaviour {
 	/// </summary>
 	/// <param name="scene">Scene a la cual se quiere cambiar</param>
 	public void changeScene(string scene){
-		Debug.Log("Entr a change scene");
+		Debug.Log("Entra change scene");
 		//message = inputFieldSessionGame.text;
 		//Debug.Log(message);
 		RefreshHostList ();
 		if (hostList != null) {
-			JoinServer(hostList[0]);
-			//GetComponent<NetworkView>().RPC("SendInfoToServer", RPCMode.All, "HOLA SERVER");
+			for(int i = 0; i < hostList.Length; i++){
+				JoinServer(hostList[i]);
+			}
 			Application.LoadLevel (scene);
 		}
 	}
@@ -73,17 +80,15 @@ public class NetworkManagerClient : MonoBehaviour {
 	private void JoinServer(HostData hostData){
 		Debug.Log("Entr a change JoinServer");
 		Network.Connect(hostData);
-
 	}
 
 	/// <summary>
 	/// Metodo que se ejecuta cuando un cliente se conecta al servidor Maestro
 	/// </summary>
 	void OnConnectedToServer(){
-		SpawnPlayer ();
-		//Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
+		Debug.Log("Entra change OnConnectedToServer");
+		//SpawnPlayer ();
 		SendInfoToServer();
-		Debug.Log("Entr a change OnConnectedToServer");
 		Debug.Log("Server Joined");
 	}
 
@@ -104,10 +109,11 @@ public class NetworkManagerClient : MonoBehaviour {
 	}
 	
 	[RPC]
-	void ReceiveInfoFromServer(string info){
-		message = info;
-		Debug.Log ("Informacion del servidor: " + info);
-		//Network.isMessageQueueRunning = false;
+	void ReceiveInfoFromServer(int idPlayer){
+		player = new Player ();
+		player.Id = idPlayer;
+		message = "CONECTADO";
+		Debug.Log ("Informacion del servidor: " + idPlayer.ToString() + " CONECTADO");
 	}
 	
 	[RPC]
@@ -119,6 +125,6 @@ public class NetworkManagerClient : MonoBehaviour {
 	private void SpawnPlayer()
 	{
 		Debug.Log("SpawnPlayer");
-		Network.Instantiate(gobjMira, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+		Network.Instantiate(gobjMiraPlayer3, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
 	}
 }

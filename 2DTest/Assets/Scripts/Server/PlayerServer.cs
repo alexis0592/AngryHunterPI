@@ -19,16 +19,27 @@ public class PlayerServer : MonoBehaviour {
 	public GameObject white; 
 	public GameObject bigRed;
 
+	public GameObject gobjMiraPlayer1;
+	public GameObject gobjMiraPlayer2;
+	public GameObject gobjMiraPlayer3;
+
+	private GameObject currentMira;
+
 	static int points = 0;
 
 	Vector3 vector;
+	Player player;
+
 	public int shoot = 0;
 	List<Movement> movements;
-
 	private Ray pulsacion;
 	private RaycastHit colision;
 
+	NetworkManager networkManager;
+
 	void Start () {
+		currentMira = gobjMiraPlayer1;
+		networkManager = GetComponent<NetworkManager> ();
 		vector = new Vector3 (0.0f, 0.0f, 0.0f);
 		movements = new List<Movement> ();
 
@@ -45,10 +56,10 @@ public class PlayerServer : MonoBehaviour {
 
 		if (GetComponent<NetworkView> ().isMine) {
 
-			this.resetTargetPosition (transform.position.x, transform.position.y);
+			this.resetTargetPosition (currentMira.transform.position.x, currentMira.transform.position.y);
 
-			transform.eulerAngles = vector;
-			transform.Translate(vector * 0.5f);
+			currentMira.transform.eulerAngles = vector;
+			currentMira.transform.Translate(vector * 0.5f);
 
 		}
 	}
@@ -71,19 +82,19 @@ public class PlayerServer : MonoBehaviour {
 		Vector3 targetPos;
 		if (xPos < -7.9f ) {
 			targetPos = new Vector3(-7.8f, yPos, 0);
-			transform.position = targetPos;
+			currentMira.transform.position = targetPos;
 		}
 		if (xPos > 7.9f) {
 			targetPos = new Vector3(7.8f, yPos, 0);
-			transform.position = targetPos;
+			currentMira.transform.position = targetPos;
 		}
 		if (yPos < -4.1f) {
 			targetPos = new Vector3(xPos, -4.0f, 0);
-			transform.position = targetPos;
+			currentMira.transform.position = targetPos;
 		}
 		if (yPos > 4.1f) {
 			targetPos = new Vector3(xPos, 4.0f, 0);
-			transform.position = targetPos;
+			currentMira.transform.position = targetPos;
 		}
 	}
 
@@ -92,7 +103,9 @@ public class PlayerServer : MonoBehaviour {
 	/// </summary>
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
-	void ReceivePlayerPosition(Vector3 vectorReceived){
+	void ReceivePlayerPosition(Vector3 vectorReceived, int idPlayer){
+		player = networkManager.getPlayer (idPlayer);
+		currentMira = (GameObject) player.Mira;
 		vector = vectorReceived;
 	}
 
@@ -101,36 +114,43 @@ public class PlayerServer : MonoBehaviour {
 	/// </summary>
 	/// <param name="shoot">Shoot.</param>
 	[RPC]
-	void ReceivePlayerShoot(int shoot){
-		Vector3 vecAux = Camera.main.WorldToScreenPoint(transform.position);
+	void ReceivePlayerShoot(int idPlayer){
+		player = networkManager.getPlayer (idPlayer);
+		Vector3 vecAux = Camera.main.WorldToScreenPoint(currentMira.transform.position);
+		pulsacion = Camera.main.ScreenPointToRay(vecAux);	
 
-		pulsacion=Camera.main.ScreenPointToRay(vecAux);	
 		if(Physics.Raycast(pulsacion,out colision)){
 			if(colision.collider.tag == "Bird"){
 				string colisionName = colision.collider.name;
-				points++;
 				switch (colisionName){
 				case "angry-bird-red":
-					movementRed.validateShoot(points);
+					movementRed.validateShoot(player.Points);
+					player.Points = player.Points + 1;
 					break;
 				case "angry-bird-black":
-					movementBlack.validateShoot(points);
+					movementBlack.validateShoot(player.Points);
+					player.Points = player.Points + 1;
 					break;
 				case "angry-bird-yellow":
-					movementYellow.validateShoot(points);
+					movementYellow.validateShoot(player.Points);
+					player.Points = player.Points + 2;
 					break;
 				case "angry-bird-green":
-					movementGreen.validateShoot(points);;
+					movementGreen.validateShoot(player.Points);;
+					player.Points = player.Points + 2;
 					break;
 				case "angry-bird-blue":
-					movementBlue.validateShoot(points);
+					movementBlue.validateShoot(player.Points);
+					player.Points = player.Points + 4;
 					Debug.Log(colisionName);
 					break;
 				case "angry-bird-white":
-					movementWhite.validateShoot(points);
+					movementWhite.validateShoot(player.Points);
+					player.Points = player.Points + 1;
 					break;
 				case "angry-bird-bigRed":
-					movementBigRed.validateShoot(points);
+					movementBigRed.validateShoot(player.Points);
+					player.Points = player.Points + 1;
 					break;
 				default:
 					break;

@@ -3,49 +3,39 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class NetworkManager : MonoBehaviour {
-	
-	string typeName;
+
+	private const string typeName = "abcd1234";
 	private const string gameName = "DuckHunter";
-	private const int numMaxGamers = 10;
+	private const int numMaxGamers = 3;
 	private const int numPort = 25000;
 	private bool serverStarted = false;
-	public GameObject gobjMira;
+	public GameObject gobjMiraPlayer1;
+	public GameObject gobjMiraPlayer2;
+	public GameObject gobjMiraPlayer3;
+	public IList listPlayers;
+
 	string message;
-	int puntuation;
 
 	public Text text;
 
-	/*void Awake(){
-		Debug.Log ("En el AWAKE");
-		int randomNumber = (int)Random.Range (1000.0F, 9999.0F);
-		//text.text = "Codigo Sala: " + (int)randomNumber;
-		typeName = randomNumber.ToString();
-		//typeName = randomNumber.ToString();
-	}*/
-
 	void Start(){
-		//text = transform.GetComponent<Text> ();
-		typeName = "abcd1234";
+		listPlayers = prepararJugadores();
+		//int randomNumber = (int)Random.Range (1000.0F, 9999.0F);
+		//typeName = randomNumber.ToString ();
+		//typeName = "abcd1234";
 		message = "";
-		puntuation = 0;
 	}
 
 	void Update(){
 		
 	}
-	
-	/*private void Awake(){
-		Debug.Log("Awake");
-		if (Network.peerType == NetworkPeerType.Disconnected) {
-			StartServer();
-		}
-	}*/
-	
+
 	void OnGUI(){
+		GUIStyle style = new GUIStyle();
+		style.normal.textColor = Color.black;		
+		style.fontSize = 15;
+
 		if (Network.peerType == NetworkPeerType.Server) {
-			GUIStyle style = new GUIStyle();
-			style.normal.textColor = Color.black;		
-			style.fontSize = 15;
 			GUI.Label(new Rect(20,20,100,25), "Numero Sesion: " + typeName, style);
 			GUI.Label(new Rect(20,40,100,25), "Jugadores: " + Network.connections.Length, style);
 		}
@@ -72,6 +62,21 @@ public class NetworkManager : MonoBehaviour {
 			throw ex;
 		}
 	}
+
+	private IList prepararJugadores(){
+		IList listNewPlayers = new ArrayList ();
+
+		Player player1 = new Player (gobjMiraPlayer1.GetInstanceID(), "Player 1", 0, false, gobjMiraPlayer1);
+		listNewPlayers.Add (player1);
+
+		Player player2 = new Player (gobjMiraPlayer2.GetInstanceID(), "Player 2", 0, false, gobjMiraPlayer2);
+		listNewPlayers.Add (player2);
+
+		Player player3 = new Player (gobjMiraPlayer3.GetInstanceID(), "Player 3", 0, false, gobjMiraPlayer3);
+		listNewPlayers.Add (player3);
+
+		return listNewPlayers;
+	}
 	
 	/// <summary>
 	/// Raises the server initialized event.
@@ -80,7 +85,6 @@ public class NetworkManager : MonoBehaviour {
 	{
 		Debug.Log("Server Initializied");
 		serverStarted = true;
-		SpawnPlayer ();
 	}
 	
 	void OnPlayerConnected(NetworkPlayer player) 
@@ -88,14 +92,44 @@ public class NetworkManager : MonoBehaviour {
 		Debug.Log("Player connected " + player.ToString());
 		if (Network.connections.Length > numMaxGamers) {
 			Debug.Log("No es permitido mas usuarios.");
-			
 		} else {
-			SendInfoToClient ();
-			//GetComponent<NetworkView>().RPC ("SendInfoToClient", RPCMode.All, null);
-			//GetComponent<NetworkView>().RPC("SendInfoToClient",RPCMode.All);
+			//Se captura el id de un nuevo jugador
+			Player newPlayerConnected = connectNewPlayer();
+			if(newPlayerConnected != null){
+				SendInfoToClient(newPlayerConnected.Id);
+			}else{
+				Debug.Log("No es permitido mas usuarios.");
+			}
+
 		}
 	}
-	
+
+	private Player connectNewPlayer(){
+		Player newPlayer = null;
+		foreach (Player player in listPlayers) {
+			if(!player.Connected)
+			{
+				newPlayer = player;
+				newPlayer.Connected = true;
+				break;
+			}
+		}
+		return newPlayer;
+	}
+
+	public Player getPlayer(int idPlayer){
+		Player newPlayer = null;
+		foreach (Player player in listPlayers) {
+			if(player.Id.Equals(idPlayer))
+			{
+				newPlayer = player;
+				break;
+			}
+		}
+		return newPlayer;
+	}
+
+
 	// This is called on the server
 	void OnPlayerDisconnected(NetworkPlayer player) 
 	{
@@ -110,17 +144,15 @@ public class NetworkManager : MonoBehaviour {
 		Debug.Log ("Problemas en la conexion: " + info);
 		serverStarted = false;
 	}
-	
-	
-	
+
 	[RPC]
-	void ReceiveInfoFromClient(string info){
-		message = info;
-		Debug.Log ("RPC ReceiveInfoFromClient: " + info);
+	void ReceiveInfoFromClient(int idPlayer){
+		message = "OE";
+		Debug.Log ("RPC ReceiveInfoFromClient: " + idPlayer.ToString());
 	}
 	
 	[RPC]
-	void ReceiveInfoFromServer(string info){
+	void ReceiveInfoFromServer(int idPlayer){
 		
 	}
 	
@@ -128,18 +160,8 @@ public class NetworkManager : MonoBehaviour {
 	void SendInfoToServer(){}
 
 	[RPC]
-	void SendInfoToClient(){
+	void SendInfoToClient(int idPlayer){
 		Debug.Log ("RPC SendInfoToClient");
-		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, "CONECTADO!!!");
-	}
-	
-	public void getPosition(Vector3 getPosition){
-		//gobjMira.transform.position = Vector3.Lerp (gobjMira.transform.position, getPosition, speed * Time.deltaTime);
-	}
-	
-	private void SpawnPlayer()
-	{
-		Debug.Log("SpawnPlayer");
-		Network.Instantiate(gobjMira, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, idPlayer);
 	}
 }
