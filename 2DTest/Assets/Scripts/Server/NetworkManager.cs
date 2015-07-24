@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -20,9 +20,6 @@ public class NetworkManager : MonoBehaviour {
 
 	void Start(){
 		listPlayers = prepararJugadores();
-		//int randomNumber = (int)Random.Range (1000.0F, 9999.0F);
-		//typeName = randomNumber.ToString ();
-		//typeName = "abcd1234";
 		message = "";
 	}
 
@@ -66,13 +63,13 @@ public class NetworkManager : MonoBehaviour {
 	private IList prepararJugadores(){
 		IList listNewPlayers = new ArrayList ();
 
-		Player player1 = new Player (gobjMiraPlayer1.GetInstanceID(), "Player 1", 0, false, gobjMiraPlayer1);
+		Player player1 = new Player ("0", "Player 1", 0, false, gobjMiraPlayer1);
 		listNewPlayers.Add (player1);
 
-		Player player2 = new Player (gobjMiraPlayer2.GetInstanceID(), "Player 2", 0, false, gobjMiraPlayer2);
+		Player player2 = new Player ("0", "Player 2", 0, false, gobjMiraPlayer2);
 		listNewPlayers.Add (player2);
 
-		Player player3 = new Player (gobjMiraPlayer3.GetInstanceID(), "Player 3", 0, false, gobjMiraPlayer3);
+		Player player3 = new Player ("0", "Player 3", 0, false, gobjMiraPlayer3);
 		listNewPlayers.Add (player3);
 
 		return listNewPlayers;
@@ -94,7 +91,7 @@ public class NetworkManager : MonoBehaviour {
 			Debug.Log("No es permitido mas usuarios.");
 		} else {
 			//Se captura el id de un nuevo jugador
-			Player newPlayerConnected = connectNewPlayer();
+			Player newPlayerConnected = connectNewPlayer(player.ToString());
 			if(newPlayerConnected != null){
 				SendInfoToClient(newPlayerConnected.Id);
 			}else{
@@ -104,12 +101,13 @@ public class NetworkManager : MonoBehaviour {
 		}
 	}
 
-	private Player connectNewPlayer(){
+	private Player connectNewPlayer(string idPlayer){
 		Player newPlayer = null;
 		foreach (Player player in listPlayers) {
 			if(!player.Connected)
 			{
 				newPlayer = player;
+				newPlayer.Id = idPlayer;
 				newPlayer.Connected = true;
 				break;
 			}
@@ -117,7 +115,7 @@ public class NetworkManager : MonoBehaviour {
 		return newPlayer;
 	}
 
-	public Player getPlayer(int idPlayer){
+	public Player getPlayer(string idPlayer){
 		Player newPlayer = null;
 		foreach (Player player in listPlayers) {
 			if(player.Id.Equals(idPlayer))
@@ -146,9 +144,9 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	[RPC]
-	void ReceiveInfoFromClient(int idPlayer){
+	void ReceiveInfoFromClient(string idPlayer){
 		message = "OE";
-		Debug.Log ("RPC ReceiveInfoFromClient: " + idPlayer.ToString());
+		Debug.Log ("RPC ReceiveInfoFromClient: " + idPlayer);
 	}
 	
 	[RPC]
@@ -160,7 +158,7 @@ public class NetworkManager : MonoBehaviour {
 	void SendInfoToServer(){}
 
 	[RPC]
-	void SendInfoToClient(int idPlayer){
+	void SendInfoToClient(string idPlayer){
 		Debug.Log ("RPC SendInfoToClient");
 		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, idPlayer);
 	}

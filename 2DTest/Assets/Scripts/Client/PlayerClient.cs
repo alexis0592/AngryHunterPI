@@ -37,7 +37,7 @@ public class PlayerClient : MonoBehaviour {
 	}
 
 	public void OnMouseDown(){
-		sendShootToServer (1);
+		sendShootToServer ("1");
 	}
 
 	/// <summary>
@@ -50,15 +50,15 @@ public class PlayerClient : MonoBehaviour {
 		Gz = Input.acceleration.z * alpha + (Gz * (1.0f - alpha));
 
 		vectorPlayer = new Vector3 (roll(), - pitch (), 0);
-		GetComponent<NetworkView> ().RPC ("ReceivePlayerPosition", RPCMode.Server, vectorPlayer, 2);//networkManagerClient.player.Id);
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerPosition", RPCMode.Server, vectorPlayer, networkManagerClient.player.Id);
 	}
 
 	/// <summary>
 	/// Llamada RPC que envia el disparo del jugador al servidor.
 	/// </summary>
 	[RPC]
-	public void sendShootToServer(int idPlayer){
-		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, 2);//networkManagerClient.player.Id);
+	public void sendShootToServer(string idPlayer){
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, networkManagerClient.player.Id);
 	}
 
 	/// <summary>
@@ -66,8 +66,8 @@ public class PlayerClient : MonoBehaviour {
 	/// </summary>
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
-	void ReceivePlayerPosition(Vector3 vectorReceived, int idPlayer){}
+	void ReceivePlayerPosition(Vector3 vectorReceived, string idPlayer){}
 
 	[RPC]
-	void ReceivePlayerShoot(int idPlayer){}
+	void ReceivePlayerShoot(string idPlayer){}
 }

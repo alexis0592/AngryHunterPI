@@ -103,7 +103,7 @@ public class PlayerServer : MonoBehaviour {
 	/// </summary>
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
-	void ReceivePlayerPosition(Vector3 vectorReceived, int idPlayer){
+	void ReceivePlayerPosition(Vector3 vectorReceived, string idPlayer){
 		player = networkManager.getPlayer (idPlayer);
 		currentMira = (GameObject) player.Mira;
 		vector = vectorReceived;
@@ -114,7 +114,7 @@ public class PlayerServer : MonoBehaviour {
 	/// </summary>
 	/// <param name="shoot">Shoot.</param>
 	[RPC]
-	void ReceivePlayerShoot(int idPlayer){
+	void ReceivePlayerShoot(string idPlayer){
 		player = networkManager.getPlayer (idPlayer);
 		Vector3 vecAux = Camera.main.WorldToScreenPoint(currentMira.transform.position);
 		pulsacion = Camera.main.ScreenPointToRay(vecAux);	

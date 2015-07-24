@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player {
 
-	private int id;
+	private string id;
 	private string nick;
 	private int points;
 	private bool connected;
@@ -14,7 +14,7 @@ public class Player {
 	
 	}
 
-	public Player (int id, string nick, int points, bool connected, object mira)
+	public Player (string id, string nick, int points, bool connected, object mira)
 	{
 		this.id = id;
 		this.nick = nick;
@@ -23,7 +23,7 @@ public class Player {
 		this.mira = mira;
 	}
 	
-	public int Id {
+	public string Id {
 		get;
 		set;
 	}

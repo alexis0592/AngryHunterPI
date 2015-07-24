@@ -109,11 +109,11 @@ public class NetworkManagerClient : MonoBehaviour {
 	}
 	
 	[RPC]
-	void ReceiveInfoFromServer(int idPlayer){
+	void ReceiveInfoFromServer(string idPlayer){
 		player = new Player ();
 		player.Id = idPlayer;
 		message = "CONECTADO";
-		Debug.Log ("Informacion del servidor: " + idPlayer.ToString() + " CONECTADO");
+		Debug.Log ("Informacion del servidor: " + idPlayer + " CONECTADO");
 	}
 	
 	[RPC]
