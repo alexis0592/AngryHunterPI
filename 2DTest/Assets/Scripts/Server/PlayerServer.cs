@@ -42,6 +42,7 @@ public class PlayerServer : MonoBehaviour {
 		movementBlue = blue.GetComponent<Movement> ();
 		movementWhite = white.GetComponent<Movement> ();
 		movementBigRed = bigRed.GetComponent<Movement> ();
+	
 	}
 
 	void Update () {
