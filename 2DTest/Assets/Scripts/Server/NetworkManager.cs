@@ -13,6 +13,9 @@ public class NetworkManager : MonoBehaviour {
 	string message;
 	int puntuation;
 
+	//Gio
+	public PlayerServer server;
+
 	public Text text;
 
 	/*void Awake(){
@@ -24,6 +27,9 @@ public class NetworkManager : MonoBehaviour {
 	}*/
 
 	void Start(){
+
+		//server = GetComponent<PlayerServer> ();
+		//server.target1 = Instantiate (gameObject);
 		//text = transform.GetComponent<Text> ();
 		typeName = "abcd1234";
 		message = "";
@@ -80,7 +86,7 @@ public class NetworkManager : MonoBehaviour {
 	{
 		Debug.Log("Server Initializied");
 		serverStarted = true;
-		SpawnPlayer ();
+		//SpawnPlayer ();
 	}
 	
 	void OnPlayerConnected(NetworkPlayer player) 
@@ -90,6 +96,7 @@ public class NetworkManager : MonoBehaviour {
 			Debug.Log("No es permitido mas usuarios.");
 			
 		} else {
+			SpawnPlayer();
 			SendInfoToClient ();
 			//GetComponent<NetworkView>().RPC ("SendInfoToClient", RPCMode.All, null);
 			//GetComponent<NetworkView>().RPC("SendInfoToClient",RPCMode.All);
@@ -101,6 +108,8 @@ public class NetworkManager : MonoBehaviour {
 	{
 		Debug.Log("Player disconnected " + player.ToString());
 	}
+
+
 	
 	/// <summary>
 	/// Raises the failed to connect to master server event.
@@ -140,6 +149,8 @@ public class NetworkManager : MonoBehaviour {
 	private void SpawnPlayer()
 	{
 		Debug.Log("SpawnPlayer");
-		Network.Instantiate(gobjMira, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+		if (Network.connections.Length > 1) { 
+			Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
+		}
 	}
 }

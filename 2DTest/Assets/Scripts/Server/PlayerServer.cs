@@ -28,6 +28,9 @@ public class PlayerServer : MonoBehaviour {
 	private Ray pulsacion;
 	private RaycastHit colision;
 
+	//GIO:
+	public GameObject target1;
+
 	void Start () {
 		vector = new Vector3 (0.0f, 0.0f, 0.0f);
 		movements = new List<Movement> ();
@@ -50,6 +53,8 @@ public class PlayerServer : MonoBehaviour {
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
 
+			Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector);
+
 		}
 	}
 
@@ -69,12 +74,16 @@ public class PlayerServer : MonoBehaviour {
 	/// <param name="yPos">Posicion Y de la mira</param>
 	private void resetTargetPosition(float xPos, float yPos){
 		Vector3 targetPos;
-		if (xPos < -7.9f ) {
-			targetPos = new Vector3(-7.8f, yPos, 0);
+		if (xPos < -7.91f && yPos < -4.1f) {
+			targetPos = new Vector3(-7.9f, 4.0f, 0);
 			transform.position = targetPos;
 		}
-		if (xPos > 7.9f) {
-			targetPos = new Vector3(7.8f, yPos, 0);
+		if (xPos < -7.91f ) {
+			targetPos = new Vector3(-7.9f, yPos, 0);
+			transform.position = targetPos;
+		}
+		if (xPos > 8.0f) {
+			targetPos = new Vector3(7.9f, yPos, 0);
 			transform.position = targetPos;
 		}
 		if (yPos < -4.1f) {
@@ -94,6 +103,7 @@ public class PlayerServer : MonoBehaviour {
 	[RPC]
 	void ReceivePlayerPosition(Vector3 vectorReceived){
 		vector = vectorReceived;
+		Debug.Log ("Recibido soy: " + transform.name);
 	}
 
 	/// <summary>
@@ -108,23 +118,28 @@ public class PlayerServer : MonoBehaviour {
 		if(Physics.Raycast(pulsacion,out colision)){
 			if(colision.collider.tag == "Bird"){
 				string colisionName = colision.collider.name;
-				points++;
+				//points++;
 				switch (colisionName){
 				case "angry-bird-red":
 					movementRed.validateShoot(points);
+					points = points + 2;
 					break;
 				case "angry-bird-black":
 					movementBlack.validateShoot(points);
+					points = points + 1;
 					break;
 				case "angry-bird-yellow":
 					movementYellow.validateShoot(points);
+					points = points + 2;
 					break;
 				case "angry-bird-green":
 					movementGreen.validateShoot(points);;
+					points = points + 2;
 					break;
 				case "angry-bird-blue":
 					movementBlue.validateShoot(points);
 					Debug.Log(colisionName);
+					points = points + 4;
 					break;
 				case "angry-bird-white":
 					movementWhite.validateShoot(points);

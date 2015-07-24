@@ -12,8 +12,8 @@ Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\Andr
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.055 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+- Completed reload, in  0.099 seconds
+desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
 <RI> Input initialized.
@@ -32,69 +32,61 @@ Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-SpawnPlayer
+Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Network:INTERNAL_CALL_Instantiate (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&,int)
-  at UnityEngine.Network.Instantiate (UnityEngine.Object prefab, Vector3 position, Quaternion rotation, Int32 group) [0x00000] in <filename unknown>:0 
-  at NetworkManager.SpawnPlayer () [0x00000] in <filename unknown>:0 
-  at NetworkManager.OnServerInitialized () [0x00000] in <filename unknown>:0 
-UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
-NetworkManager:StartServer()
-NetworkManager:changeScene(String)
-UnityEngine.Events.InvokableCall`1:Invoke(Object[])
-UnityEngine.Events.CachedInvokableCall`1:Invoke(Object[])
-UnityEngine.Events.InvokableCallList:Invoke(Object[])
-UnityEngine.Events.UnityEventBase:Invoke(Object[])
-UnityEngine.Events.UnityEvent:Invoke()
-UnityEngine.UI.Button:Press()
-UnityEngine.UI.Button:OnPointerClick(PointerEventData)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
-UnityEngine.EventSystems.StandaloneInputModule:Process()
-UnityEngine.EventSystems.EventSystem:Update()
- 
-(Filename:  Line: -1)
 
 Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.028144 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.748836 ms (FindLiveObjects: 0.113721 ms CreateObjectMapping: 0.089499 ms MarkObjects: 0.527962 ms  DeleteObjects: 0.014369 ms)
+
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
 SpawnPlayer
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Network:INTERNAL_CALL_Instantiate (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&,int)
-  at UnityEngine.Network.Instantiate (UnityEngine.Object prefab, Vector3 position, Quaternion rotation, Int32 group) [0x00000] in <filename unknown>:0 
-  at NetworkManager.SpawnPlayer () [0x00000] in <filename unknown>:0 
-  at NetworkManager.OnServerInitialized () [0x00000] in <filename unknown>:0 
-UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
-NetworkManager:StartServer()
-NetworkManager:changeScene(String)
-UnityEngine.Events.InvokableCall`1:Invoke(Object[])
-UnityEngine.Events.CachedInvokableCall`1:Invoke(Object[])
-UnityEngine.Events.InvokableCallList:Invoke(Object[])
-UnityEngine.Events.UnityEventBase:Invoke(Object[])
-UnityEngine.Events.UnityEvent:Invoke()
-UnityEngine.UI.Button:Press()
-UnityEngine.UI.Button:OnPointerClick(PointerEventData)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
-UnityEngine.EventSystems.StandaloneInputModule:Process()
-UnityEngine.EventSystems.EventSystem:Update()
+RPC SendInfoToClient
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.117230 ms
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 236.
-Total: 0.318173 ms (FindLiveObjects: 0.024632 ms CreateObjectMapping: 0.014779 ms MarkObjects: 0.265623 ms  DeleteObjects: 0.012726 ms)
+SpawnPlayer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+RPC SendInfoToClient
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Player connected 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+SpawnPlayer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+RPC SendInfoToClient
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+angry-bird-blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+angry-bird-blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 

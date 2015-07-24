@@ -35,6 +35,10 @@ public class NetworkManagerClient : MonoBehaviour {
 		}
 	}
 
+	public void joinToGame(){
+		RefreshHostList ();
+	}
+
 	/// <summary>
 	/// Metodo para cambiar la escena de Juego.
 	/// </summary>
@@ -45,7 +49,9 @@ public class NetworkManagerClient : MonoBehaviour {
 		//Debug.Log(message);
 		RefreshHostList ();
 		if (hostList != null) {
-			JoinServer(hostList[0]);
+			for(int i = 0; i < hostList.Length; i++){
+				JoinServer(hostList[i]);
+			}
 			//GetComponent<NetworkView>().RPC("SendInfoToServer", RPCMode.All, "HOLA SERVER");
 			Application.LoadLevel (scene);
 		}
@@ -82,7 +88,7 @@ public class NetworkManagerClient : MonoBehaviour {
 	void OnConnectedToServer(){
 		SpawnPlayer ();
 		//Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
-		SendInfoToServer();
+		//SendInfoToServer();
 		Debug.Log("Entr a change OnConnectedToServer");
 		Debug.Log("Server Joined");
 	}
