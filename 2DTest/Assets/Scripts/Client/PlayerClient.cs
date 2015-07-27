@@ -8,7 +8,6 @@ public class PlayerClient : MonoBehaviour {
 	float Gz = 0f;
 	static float alpha = 0.5f;
 	Vector3 vector;
-	private bool clicked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,11 +21,6 @@ public class PlayerClient : MonoBehaviour {
 			moveMira ();
 		}
 
-		/*if(!clicked){
-			sendShootToServer(0);
-		}else{
-			sendShootToServer(1);
-		}*/
 	}
 	
 	private float pitch(){
@@ -44,10 +38,6 @@ public class PlayerClient : MonoBehaviour {
 	public void OnMouseDown(){
 		sendShootToServer (1);
 	}
-
-	/*public void OnMouseUp(){
-		sendShootToServer (0);
-	}*/
 
 	/// <summary>
 	/// Llamada RPC que envia los datos del acelerometro al servidor, para mover la mira
@@ -71,6 +61,9 @@ public class PlayerClient : MonoBehaviour {
 
 		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, shootToServer);
 	}
+
+
+	//***************Declaracion de metodos RPC del lado del server**********************************
 
 	/// <summary>
 	/// LLamada RPC del Script PlayerServer, que recibe los datos adquiridos por el acelerometro

@@ -14,7 +14,7 @@ public class NetworkManager : MonoBehaviour {
 	int puntuation;
 
 	//Gio
-	public PlayerServer server;
+	//public PlayerServer server;
 
 	public Text text;
 
@@ -97,15 +97,15 @@ public class NetworkManager : MonoBehaviour {
 			
 		} else {
 			SpawnPlayer();
-			SendInfoToClient ();
+			SendInfoToClient (player.ToString());
+
 			//GetComponent<NetworkView>().RPC ("SendInfoToClient", RPCMode.All, null);
 			//GetComponent<NetworkView>().RPC("SendInfoToClient",RPCMode.All);
 		}
 	}
 	
 	// This is called on the server
-	void OnPlayerDisconnected(NetworkPlayer player) 
-	{
+	void OnPlayerDisconnected(NetworkPlayer player){
 		Debug.Log("Player disconnected " + player.ToString());
 	}
 
@@ -119,38 +119,35 @@ public class NetworkManager : MonoBehaviour {
 		Debug.Log ("Problemas en la conexion: " + info);
 		serverStarted = false;
 	}
-	
-	
-	
+
 	[RPC]
 	void ReceiveInfoFromClient(string info){
 		message = info;
 		Debug.Log ("RPC ReceiveInfoFromClient: " + info);
 	}
-	
-	[RPC]
-	void ReceiveInfoFromServer(string info){
-		
-	}
-	
-	[RPC]
-	void SendInfoToServer(){}
 
 	[RPC]
-	void SendInfoToClient(){
+	void SendInfoToClient(string idPlayer){
 		Debug.Log ("RPC SendInfoToClient");
-		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, "CONECTADO!!!");
+		GetComponent<NetworkView>().RPC ("ReceiveInfoFromServer", RPCMode.All, "CONECTADO!!!", idPlayer);
 	}
 	
 	public void getPosition(Vector3 getPosition){
 		//gobjMira.transform.position = Vector3.Lerp (gobjMira.transform.position, getPosition, speed * Time.deltaTime);
 	}
 	
-	private void SpawnPlayer()
-	{
+	private void SpawnPlayer(){
 		Debug.Log("SpawnPlayer");
 		if (Network.connections.Length > 1) { 
 			Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
 		}
 	}
+
+	//************Declaracion de Metodos RPC del lado del cliente***************************
+
+	[RPC]
+	void ReceiveInfoFromServer(string info, string idPlayer){}
+	
+	[RPC]
+	void SendInfoToServer(){}
 }

@@ -19,6 +19,9 @@ public class PlayerServer : MonoBehaviour {
 	public GameObject white; 
 	public GameObject bigRed;
 
+	public GameObject mira1;
+	public GameObject mira2;
+
 	static int points = 0;
 
 	Vector3 vector;
@@ -29,7 +32,7 @@ public class PlayerServer : MonoBehaviour {
 	private RaycastHit colision;
 
 	//GIO:
-	public GameObject target1;
+	//public GameObject target1;
 
 	void Start () {
 		vector = new Vector3 (0.0f, 0.0f, 0.0f);
@@ -42,6 +45,7 @@ public class PlayerServer : MonoBehaviour {
 		movementBlue = blue.GetComponent<Movement> ();
 		movementWhite = white.GetComponent<Movement> ();
 		movementBigRed = bigRed.GetComponent<Movement> ();
+
 	
 	}
 
@@ -50,6 +54,7 @@ public class PlayerServer : MonoBehaviour {
 		if (GetComponent<NetworkView> ().isMine) {
 
 			this.resetTargetPosition (transform.position.x, transform.position.y);
+
 
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);

@@ -12,10 +12,13 @@ public class NetworkManagerClient : MonoBehaviour {
 	private HostData[] hostList;
 	
 	private NetworkView nView;
+
 	public GameObject gobjMira;
 
 	public string message;
 	public InputField inputFieldSessionGame;
+
+	private ArrayList playersArray;
 
 	void Awake(){
 
@@ -23,6 +26,7 @@ public class NetworkManagerClient : MonoBehaviour {
 
 	void Start(){
 		message = "";
+		playersArray = new ArrayList ();
 		inputFieldSessionGame = GetComponent<InputField> ();
 	}
 
@@ -30,7 +34,7 @@ public class NetworkManagerClient : MonoBehaviour {
 		if (Network.peerType == NetworkPeerType.Client) {
 			GUIStyle style = new GUIStyle ();
 			style.normal.textColor = Color.black;
-			GUI.Label (new Rect (50, 50, 400, 405), "Estado del Juego: " + message);
+			GUI.Label (new Rect (50, 50, 400, 405), "Estado del Juego: " + message + " " );
 
 		}
 	}
@@ -110,9 +114,10 @@ public class NetworkManagerClient : MonoBehaviour {
 	}
 	
 	[RPC]
-	void ReceiveInfoFromServer(string info){
+	void ReceiveInfoFromServer(string info, string idPlayer){
 		message = info;
-		Debug.Log ("Informacion del servidor: " + info);
+		playersArray.Add (idPlayer);
+		Debug.Log ("Informacion del servidor: " + info + idPlayer);
 		//Network.isMessageQueueRunning = false;
 	}
 	
@@ -125,6 +130,6 @@ public class NetworkManagerClient : MonoBehaviour {
 	private void SpawnPlayer()
 	{
 		Debug.Log("SpawnPlayer");
-		Network.Instantiate(gobjMira, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+		Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
 	}
 }
