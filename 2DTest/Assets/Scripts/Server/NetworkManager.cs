@@ -96,7 +96,8 @@ public class NetworkManager : MonoBehaviour {
 			Debug.Log("No es permitido mas usuarios.");
 			
 		} else {
-			SpawnPlayer();
+			NetworkViewID nViewId = Network.AllocateViewID();
+			SpawnPlayer(nViewId);
 			SendInfoToClient (player.ToString());
 
 			//GetComponent<NetworkView>().RPC ("SendInfoToClient", RPCMode.All, null);
@@ -135,13 +136,23 @@ public class NetworkManager : MonoBehaviour {
 	public void getPosition(Vector3 getPosition){
 		//gobjMira.transform.position = Vector3.Lerp (gobjMira.transform.position, getPosition, speed * Time.deltaTime);
 	}
-	
-	private void SpawnPlayer(){
+
+	private void SpawnPlayer(NetworkViewID viewId){
 		Debug.Log("SpawnPlayer");
-		if (Network.connections.Length > 1) { 
+		/*if (Network.connections.Length > 1) { 
 			Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
-		}
+		}*/
+		Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0) as Transform as Transform;
+		//NetworkView nView = clone.GetComponent<NetworkView> ();
+		//nView.viewID = viewId;
 	}
+
+	/*void OnNetworkInstantiate(NetworkMessageInfo info){
+		if (Network.isServer) {
+			Network.RemoveRPCs(GetComponent<NetworkView>().viewID);
+			Network.Destroy(gobjMira);
+		}
+	}*/
 
 	//************Declaracion de Metodos RPC del lado del cliente***************************
 

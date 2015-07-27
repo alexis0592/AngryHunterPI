@@ -90,7 +90,7 @@ public class NetworkManagerClient : MonoBehaviour {
 	/// Metodo que se ejecuta cuando un cliente se conecta al servidor Maestro
 	/// </summary>
 	void OnConnectedToServer(){
-		SpawnPlayer ();
+		//SpawnPlayer ();
 		//Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
 		//SendInfoToServer();
 		Debug.Log("Entr a change OnConnectedToServer");
