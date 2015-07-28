@@ -30,6 +30,15 @@ public class PlayerServer : MonoBehaviour {
 
 	private Ray pulsacion;
 	private RaycastHit colision;
+	
+	float Gx = 0f;
+	float Gy = 0f;
+	float Gz = 0f;
+	static float alpha = 0.5f;
+	Vector3 vector1;
+	Vector3 vector2;
+	Vector3 vector3;
+	NetworkManager nManager;
 
 	//GIO:
 	//public GameObject target1;
@@ -45,22 +54,23 @@ public class PlayerServer : MonoBehaviour {
 		movementBlue = blue.GetComponent<Movement> ();
 		movementWhite = white.GetComponent<Movement> ();
 		movementBigRed = bigRed.GetComponent<Movement> ();
-
+		nManager = GetComponent<NetworkManager> ();
 	
 	}
 
 	void Update () {
 
 		if (GetComponent<NetworkView> ().isMine) {
-
 			this.resetTargetPosition (transform.position.x, transform.position.y);
-
 
 			transform.eulerAngles = vector;
 			transform.Translate(vector * 0.5f);
 
-			Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector);
+			//Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector);
+		}
 
+		if (Network.peerType == NetworkPeerType.Client) {
+			moveMira ();
 		}
 	}
 
@@ -107,7 +117,7 @@ public class PlayerServer : MonoBehaviour {
 	/// </summary>
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
-	void ReceivePlayerPosition(Vector3 vectorReceived){
+	void ReceivePlayerPosition(Vector3 vectorReceived, string idPlayer){
 		vector = vectorReceived;
 		Debug.Log ("Recibido soy: " + transform.name);
 	}
@@ -159,6 +169,38 @@ public class PlayerServer : MonoBehaviour {
 			}
 		}
 		this.shoot = shoot;
+	}
+
+	//************************Metodos del cliente*****************************
+
+	private float pitch(){
+		return Mathf.Atan(Gy/(Mathf.Sqrt(Mathf.Pow(Gx,2) + Mathf.Pow(Gz,2))));
+	}
+	
+	private float roll(){
+		return Mathf.Atan(-Gx/Gz);
+	}
+	
+	void OnConnectedToServer(){
+		Update ();
+	}
+	
+	[RPC]
+	void moveMira(){
+		Gx = Input.acceleration.x * alpha + (Gx * (1.0f - alpha));
+		Gy = Input.acceleration.y * alpha + (Gy * (1.0f - alpha));
+		Gz = Input.acceleration.z * alpha + (Gz * (1.0f - alpha));
+
+
+		vector1 = new Vector3 (roll(), - pitch (), 0);
+		
+		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.All, vector1,"1" );
+	}
+	
+	[RPC]
+	public void sendShootToServer(int shootToServer){
+		
+		GetComponent<NetworkView> ().RPC ("ReceivePlayerShoot", RPCMode.Server, shootToServer);
 	}
 	
 }

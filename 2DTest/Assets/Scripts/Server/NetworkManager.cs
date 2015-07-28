@@ -11,20 +11,13 @@ public class NetworkManager : MonoBehaviour {
 	private bool serverStarted = false;
 	public GameObject gobjMira;
 	string message;
-	int puntuation;
+
+	public ArrayList playersList;
 
 	//Gio
 	//public PlayerServer server;
 
 	public Text text;
-
-	/*void Awake(){
-		Debug.Log ("En el AWAKE");
-		int randomNumber = (int)Random.Range (1000.0F, 9999.0F);
-		//text.text = "Codigo Sala: " + (int)randomNumber;
-		typeName = randomNumber.ToString();
-		//typeName = randomNumber.ToString();
-	}*/
 
 	void Start(){
 
@@ -33,19 +26,12 @@ public class NetworkManager : MonoBehaviour {
 		//text = transform.GetComponent<Text> ();
 		typeName = "abcd1234";
 		message = "";
-		puntuation = 0;
+		playersList = new ArrayList();
 	}
 
 	void Update(){
 		
 	}
-	
-	/*private void Awake(){
-		Debug.Log("Awake");
-		if (Network.peerType == NetworkPeerType.Disconnected) {
-			StartServer();
-		}
-	}*/
 	
 	void OnGUI(){
 		if (Network.peerType == NetworkPeerType.Server) {
@@ -68,8 +54,7 @@ public class NetworkManager : MonoBehaviour {
 	/// <summary>
 	/// Starts the server. 
 	/// </summary>
-	private void StartServer()
-	{
+	private void StartServer(){
 		Debug.Log("Start Server");
 		try{
 			Network.InitializeServer(numMaxGamers, numPort, !Network.HavePublicAddress());
@@ -82,22 +67,20 @@ public class NetworkManager : MonoBehaviour {
 	/// <summary>
 	/// Raises the server initialized event.
 	/// </summary>
-	void OnServerInitialized()
-	{
+	void OnServerInitialized(){
 		Debug.Log("Server Initializied");
 		serverStarted = true;
 		//SpawnPlayer ();
 	}
 	
-	void OnPlayerConnected(NetworkPlayer player) 
-	{
+	void OnPlayerConnected(NetworkPlayer player) {
 		Debug.Log("Player connected " + player.ToString());
 		if (Network.connections.Length > numMaxGamers) {
 			Debug.Log("No es permitido mas usuarios.");
 			
 		} else {
 			NetworkViewID nViewId = Network.AllocateViewID();
-			SpawnPlayer(nViewId);
+			SpawnPlayer(player);
 			SendInfoToClient (player.ToString());
 
 			//GetComponent<NetworkView>().RPC ("SendInfoToClient", RPCMode.All, null);
@@ -137,23 +120,18 @@ public class NetworkManager : MonoBehaviour {
 		//gobjMira.transform.position = Vector3.Lerp (gobjMira.transform.position, getPosition, speed * Time.deltaTime);
 	}
 
-	private void SpawnPlayer(NetworkViewID viewId){
+	private void SpawnPlayer(NetworkPlayer player){
 		Debug.Log("SpawnPlayer");
 		/*if (Network.connections.Length > 1) { 
 			Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
 		}*/
-		Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0) as Transform as Transform;
+		Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0)as Transform;
+		playersList.Add (player);
+		//Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0) as Transform as Transform;
 		//NetworkView nView = clone.GetComponent<NetworkView> ();
 		//nView.viewID = viewId;
 	}
-
-	/*void OnNetworkInstantiate(NetworkMessageInfo info){
-		if (Network.isServer) {
-			Network.RemoveRPCs(GetComponent<NetworkView>().viewID);
-			Network.Destroy(gobjMira);
-		}
-	}*/
-
+	
 	//************Declaracion de Metodos RPC del lado del cliente***************************
 
 	[RPC]

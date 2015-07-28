@@ -50,7 +50,7 @@ public class PlayerClient : MonoBehaviour {
 
 		vector = new Vector3 (roll(), - pitch (), 0);
 
-		transform.GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.All, vector);
+		transform.GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.AllBuffered, vector);
 	}
 
 	/// <summary>
