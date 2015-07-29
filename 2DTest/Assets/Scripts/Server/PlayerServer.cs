@@ -39,7 +39,10 @@ public class PlayerServer : MonoBehaviour {
 	Vector3 vector2;
 	Vector3 vector3;
 	NetworkManager nManager;
+	NetworkManagerClient nmClient;
 
+	ArrayList  posicionesMira1List;
+	ArrayList posicionesMira2List;
 	//GIO:
 	//public GameObject target1;
 
@@ -55,7 +58,10 @@ public class PlayerServer : MonoBehaviour {
 		movementWhite = white.GetComponent<Movement> ();
 		movementBigRed = bigRed.GetComponent<Movement> ();
 		nManager = GetComponent<NetworkManager> ();
-	
+
+		posicionesMira1List = new ArrayList ();
+		posicionesMira2List = new ArrayList ();
+
 	}
 
 	void Update () {
@@ -63,14 +69,28 @@ public class PlayerServer : MonoBehaviour {
 		if (GetComponent<NetworkView> ().isMine) {
 			this.resetTargetPosition (transform.position.x, transform.position.y);
 
-			transform.eulerAngles = vector;
-			transform.Translate(vector * 0.5f);
+			string transformName = transform.name;
+			Vector3 vecAux;
+			if (transformName.Substring (5, 1) == "1") {
+				transform.eulerAngles = vector1;
+				transform.Translate(vector1 * 0.5f);
+			}else{
+				transform.eulerAngles = vector2;
+				transform.Translate(vector2 * 0.5f);
+
+			}
+
 
 			//Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector);
 		}
 
 		if (Network.peerType == NetworkPeerType.Client) {
 			moveMira ();
+			for(int i = 0; i < Input.touchCount; i++){
+				if(Input.GetTouch(i).phase == TouchPhase.Began){
+					sendShootToServer(1);
+				}
+			}
 		}
 	}
 
@@ -118,7 +138,12 @@ public class PlayerServer : MonoBehaviour {
 	/// <param name="vectorReceived">Vector received.</param>
 	[RPC]
 	void ReceivePlayerPosition(Vector3 vectorReceived, string idPlayer){
-		vector = vectorReceived;
+		if (idPlayer == "1") {
+			vector1 =  vectorReceived;
+		} else if(idPlayer == "2"){
+			vector2 = vectorReceived;
+		}
+		//vector = vectorReceived;
 		Debug.Log ("Recibido soy: " + transform.name);
 	}
 
@@ -187,16 +212,19 @@ public class PlayerServer : MonoBehaviour {
 	
 	[RPC]
 	void moveMira(){
+		GameObject shareObject = GameObject.Find("shareObject");
+		nmClient = shareObject.GetComponent<NetworkManagerClient> ();
 		Gx = Input.acceleration.x * alpha + (Gx * (1.0f - alpha));
 		Gy = Input.acceleration.y * alpha + (Gy * (1.0f - alpha));
 		Gz = Input.acceleration.z * alpha + (Gz * (1.0f - alpha));
 
+		string transformId = transform.name.Substring(5, 1);
 
-		vector1 = new Vector3 (roll(), - pitch (), 0);
+		vector = new Vector3 (roll(), - pitch (), 0);
 		
-		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.All, vector1,"1" );
+		GetComponent<NetworkView>().RPC ("ReceivePlayerPosition", RPCMode.All, vector,nmClient.playerId);
 	}
-	
+
 	[RPC]
 	public void sendShootToServer(int shootToServer){
 		

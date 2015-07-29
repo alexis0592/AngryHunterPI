@@ -16,6 +16,7 @@ public class NetworkManagerClient : MonoBehaviour {
 	public GameObject gobjMira;
 
 	public string message;
+	public string playerId;
 	public InputField inputFieldSessionGame;
 
 	private ArrayList playersArray;
@@ -116,10 +117,12 @@ public class NetworkManagerClient : MonoBehaviour {
 	[RPC]
 	void ReceiveInfoFromServer(string info, string idPlayer){
 		message = info;
+		playerId = idPlayer;
 		playersArray.Add (idPlayer);
 		Debug.Log ("Informacion del servidor: " + info + idPlayer);
 		//Network.isMessageQueueRunning = false;
 	}
+
 	
 	[RPC]
 	void ReceiveInfoFromClient(string info){}

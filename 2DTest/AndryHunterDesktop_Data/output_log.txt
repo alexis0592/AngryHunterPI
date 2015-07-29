@@ -12,7 +12,7 @@ Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\Andr
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Alexis\Documents\Proyectos\AngryHunterPI\2DTest\AndryHunterDesktop_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.115 seconds
+- Completed reload, in  0.091 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
@@ -36,15 +36,11 @@ Server Initializied
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Server Initializied
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.750212 ms
+UnloadTime: 7.270789 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 284.
-Total: 1.140499 ms (FindLiveObjects: 0.028327 ms CreateObjectMapping: 0.541100 ms MarkObjects: 0.558754 ms  DeleteObjects: 0.011495 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.284098 ms (FindLiveObjects: 0.031201 ms CreateObjectMapping: 0.020116 ms MarkObjects: 0.221284 ms  DeleteObjects: 0.010263 ms)
 
 Player connected 1
  
@@ -58,2023 +54,567 @@ RPC SendInfoToClient
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
+Recibido soy: Mira_1(Clone)
  
-(Filename:  Line: 134)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerShoot' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-RPC call failed because the function 'ReceivePlayerPosition' does not exist in any script attached to'shareObject'
- 
-(Filename:  Line: 134)
-
-Player disconnected 1
+Recibido soy: Mira_1(Clone)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 

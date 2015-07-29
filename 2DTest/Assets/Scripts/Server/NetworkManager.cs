@@ -91,6 +91,11 @@ public class NetworkManager : MonoBehaviour {
 	// This is called on the server
 	void OnPlayerDisconnected(NetworkPlayer player){
 		Debug.Log("Player disconnected " + player.ToString());
+
+		if (Network.isServer) {
+			Network.RemoveRPCs(gobjMira.GetComponent<NetworkView>().viewID);
+			Network.Destroy(gobjMira);
+		}
 	}
 
 
@@ -122,14 +127,10 @@ public class NetworkManager : MonoBehaviour {
 
 	private void SpawnPlayer(NetworkPlayer player){
 		Debug.Log("SpawnPlayer");
-		/*if (Network.connections.Length > 1) { 
-			Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
-		}*/
-		Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0)as Transform;
+		gobjMira.name = "Mira_" + player.ToString ();
+		GameObject clone = (GameObject)Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0);
+		//clone.GetComponent<NetworkView>().name = "Mira_" + player.ToString ();
 		playersList.Add (player);
-		//Transform clone = Network.Instantiate (gobjMira, new Vector3 (0f, 0f, 0f), Quaternion.identity, 0) as Transform as Transform;
-		//NetworkView nView = clone.GetComponent<NetworkView> ();
-		//nView.viewID = viewId;
 	}
 	
 	//************Declaracion de Metodos RPC del lado del cliente***************************
