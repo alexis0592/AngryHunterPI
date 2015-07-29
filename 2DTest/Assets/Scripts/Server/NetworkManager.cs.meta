@@ -1,10 +1,20 @@
 fileFormatVersion: 2
 guid: ee817842328ca974ea9126bf22cff978
-timeCreated: 1433944871
+timeCreated: 1438011706
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gobjMiraPlayer1: {instanceID: 0}
+  - gobjMiraPlayer2: {instanceID: 0}
+  - gobjMiraPlayer3: {instanceID: 0}
+  - green: {instanceID: 0}
+  - red: {instanceID: 0}
+  - yellow: {instanceID: 0}
+  - black: {instanceID: 0}
+  - blue: {instanceID: 0}
+  - white: {instanceID: 0}
+  - bigRed: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
