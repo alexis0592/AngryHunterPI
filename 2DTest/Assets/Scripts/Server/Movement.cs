@@ -14,7 +14,8 @@ public class Movement : MonoBehaviour {
 	private RaycastHit colision;
 	
 	void Start (){
-		initPos = new Vector3 (3.5f, 2.5f, 0);
+		//initPos = new Vector3 (3.5f, 2.5f, 0);
+		initPos= new Vector3(-10.5f, Random.Range(-3.4f, 1.2f), 0.0f);
 	}
 	
 	void Update (){
@@ -27,14 +28,14 @@ public class Movement : MonoBehaviour {
 		initPos = v;
 		transform.position = Vector3.MoveTowards (transform.position, v, step);
 
-		if (Input.GetMouseButton (0)) {
+		/*if (Input.GetMouseButton (0)) {
 			Vector3 mousePosition = Input.mousePosition;
 			pulsacion=Camera.main.ScreenPointToRay(mousePosition);
 			if(Physics.Raycast(pulsacion,out colision))
 			{
 				Debug.Log(colision.collider.name); 
 			}
-		}
+		}*/
 	}
 	
 
@@ -67,7 +68,8 @@ public class Movement : MonoBehaviour {
 
 	public void validateShoot(int point){
 
-		initPos= new Vector3(-10.5f, Random.Range(-3.4f, 1.2f), 0.0f);
+		//initPos= new Vector3(-10.5f, Random.Range(-3.4f, 1.2f), 0.0f);
+		Debug.Log (transform.name);
 		Vector3 v= ResetTarget (initPos);
 		transform.position = initPos;
 		puntuation = point;

@@ -74,14 +74,15 @@ public class PlayerServer : MonoBehaviour {
 			if (transformName.Substring (5, 1) == "1") {
 				transform.eulerAngles = vector1;
 				transform.Translate(vector1 * 0.5f);
-			}else{
+				//Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector1);
+			}else if(transformName.Substring (5, 1) == "2"){
 				transform.eulerAngles = vector2;
 				transform.Translate(vector2 * 0.5f);
-
+				//Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector2);
 			}
 
 
-			//Debug.Log(transform.gameObject.name + " , " + transform.position + " , " + vector);
+
 		}
 
 		if (Network.peerType == NetworkPeerType.Client) {
@@ -144,7 +145,7 @@ public class PlayerServer : MonoBehaviour {
 			vector2 = vectorReceived;
 		}
 		//vector = vectorReceived;
-		Debug.Log ("Recibido soy: " + transform.name);
+		//Debug.Log ("Recibido soy: " + transform.name);
 	}
 
 	/// <summary>
