@@ -144,9 +144,11 @@ public class PlayerServer : MonoBehaviour {
 					break;
 				case "angry-bird-white":
 					movementWhite.validateShoot(points);
+					points = points + 1;
 					break;
 				case "angry-bird-bigRed":
 					movementBigRed.validateShoot(points);
+					points = points + 1;
 					break;
 				default:
 					break;
